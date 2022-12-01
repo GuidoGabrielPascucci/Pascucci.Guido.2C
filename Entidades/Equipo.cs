@@ -28,7 +28,7 @@ namespace Entidades
             this.jugadores = new List<Jugador>();
         }
 
-        public Equipo(string nombre) : base()
+        public Equipo(string nombre) : this()
         {
             this.nombre = nombre;
         }
