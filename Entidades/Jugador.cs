@@ -40,8 +40,7 @@ namespace Entidades
 
         public bool ValidarEstadoFisico()
         {
-            double n = this.peso / this.altura;
-            double imc = Math.Pow(n, 2);
+            double imc = this.peso / Math.Pow(this.altura, 2);
             return imc >= 18.5 && imc <= 25;
         }
     }
