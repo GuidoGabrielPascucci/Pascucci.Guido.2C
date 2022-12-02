@@ -79,7 +79,9 @@ namespace Entidades
             if (e.jugadores is not null)
             {
                 if (e != j && e.jugadores.Count < Equipo.cantidadMaximaJugadores && j.ValidarAptitud())
+                {
                     e.jugadores.Add(j);
+                }
             }
 
             return e;
